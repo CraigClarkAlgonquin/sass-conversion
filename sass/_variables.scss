@@ -1,0 +1,27 @@
+/*  VARIABLES */
+
+//typography
+$primary-font: Arial, sans-serif;
+
+$fontface-special: "Damion";
+$emphasis: italic;
+$strong: bold;
+
+//colors
+//NOTE: use RGBA for more control than hex
+//NOTE: use SASS Mix for hue values, this reduces the amount of variables required for site wide color scheme changes
+
+//Tonal Control. use only for mixing tints
+$tint: white;
+
+//Tone control. use only for mixing shades
+$shade: black;
+
+//colors used in document
+$lightest-color: rgba(255, 255, 255, 1);
+$darkest-color: rgba(0, 0, 0, 1);
+$a-link: $darkest-color;
+$a-hover: rgba(184, 134, 11, 1);
+$a-hover-secondary: rgba(65, 105, 225, 1);
+$highlight: rgba(255, 215, 0, 1);
+$nav-divider: rgba(204, 204, 221, 1);

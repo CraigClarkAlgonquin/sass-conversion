@@ -6,10 +6,10 @@
   font-weight: 400;
   src: local("Damion"), url(https://fonts.gstatic.com/s/damion/v6/ksD1WDDgZAyMd1VY75GZ6evvDin1pK8aKteLpeZ5c0A.woff2) format("woff2"); }
 
+/*  VARIABLES */
 * {
   box-sizing: border-box; }
 
-/*  VARIABLES */
 html, body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -27,9 +27,8 @@ h1 {
 a {
   color: black;
   text-decoration: none; }
-
-a:hover {
-  color: darkgoldenrod; }
+  a:hover {
+    color: darkgoldenrod; }
 
 .box {
   width: 90%;
@@ -43,29 +42,26 @@ a:hover {
 #company {
   font-size: 3rem; }
 
+.first h1 {
+  font-family: "Damion";
+  margin: 1.5rem 2rem 1.5rem 0; }
+
 .first ul {
   margin: 0 0 1.5rem 0;
   padding: 0;
   border: 1px solid #666666; }
-
-.first ul li a {
-  display: block;
-  border-bottom: 1px solid #cccccc;
-  padding: 1rem;
-  background-color: #ededed; }
-
-.first ul li a:hover {
-  background-color: #666666;
-  border-bottom: 1px solid #666666;
-  color: white;
-  text-shadow: 0 1px 1px #333333; }
-
-.first ul li:nth-of-type(6) a {
-  border-bottom: none; }
-
-.first h1 {
-  font-family: "Damion";
-  margin: 1.5rem 2rem 1.5rem 0; }
+  .first ul li a {
+    display: block;
+    border-bottom: 1px solid #cccccc;
+    padding: 1rem;
+    background-color: #ededed; }
+    .first ul li a:hover {
+      background-color: #666666;
+      border-bottom: 1px solid #666666;
+      color: white;
+      text-shadow: 0 1px 1px #333333; }
+  .first ul li:nth-of-type(6) a {
+    border-bottom: none; }
 
 /* -- SECOND DIV -- */
 .bg-people {
@@ -74,161 +70,129 @@ a:hover {
   /* bg image will always cover the assigned area regardless of screen-size */
   color: white;
   padding: 2rem 0 3rem 0; }
-
-.bg-people a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  margin: 0 0 1rem 0;
-  border: 1px solid white;
-  background-color: black;
-  transition: background-color 0.5s ease, border 0.5s ease; }
-
-.bg-people a:hover {
-  background-color: royalblue;
-  border: 1px solid royalblue; }
-
-.bg-people h1 span:first-of-type {
-  /* accessing '+' in <h1> */
-  font-family: Impact, sans-serif;
-  vertical-align: middle;
-  font-size: 4rem;
-  color: gold; }
-
-.bg-people h1 span:last-of-type {
-  font-style: italic;
-  text-transform: lowercase; }
+  .bg-people a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 0 0 1rem 0;
+    border: 1px solid white;
+    background-color: black;
+    transition: background-color 0.5s ease, border 0.5s ease; }
+    .bg-people a:hover {
+      background-color: royalblue;
+      border: 1px solid royalblue; }
+  .bg-people h1 span:first-of-type {
+    font-family: Impact, sans-serif;
+    vertical-align: middle;
+    font-size: 4rem;
+    color: gold; }
+  .bg-people h1 span:last-of-type {
+    font-style: italic;
+    text-transform: lowercase; }
 
 /* -- THIRD DIV -- */
 .bg-gold {
   background-color: gold;
   padding: 2rem 0; }
-
-.bg-gold ul li {
-  width: 100%; }
-
-.bg-gold li a {
-  display: block;
-  padding: 1rem;
-  background-color: white;
-  text-decoration: none;
-  border-bottom: 1px solid #cccccc; }
-
-.bg-gold li:last-child a {
-  border: none; }
-
-.bg-gold li a:hover {
-  /* when <a> that belongs to .bg-gold is hovered, color the text of second <span> that belongs to <a> to darkgoldenrod */
-  color: #666666;
-  background-color: black, white, 7%; }
-
-.bg-gold li span:last-child {
-  text-transform: uppercase;
-  margin: 0 0 0 1rem; }
+  .bg-gold ul li {
+    width: 100%; }
+    .bg-gold ul li a {
+      display: block;
+      padding: 1rem;
+      background-color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #cccccc; }
+      .bg-gold ul li a:hover {
+        /* when <a> that belongs to .bg-gold is hovered, color the text of second <span> that belongs to <a> to darkgoldenrod */
+        color: #666666;
+        background-color: black, white, 7%; }
+    .bg-gold ul li:last-child a {
+      border: none; }
+    .bg-gold ul li span:last-child {
+      text-transform: uppercase;
+      margin: 0 0 0 1rem; }
 
 /* -- FOURTH DIV -- */
 .second {
   padding: 2rem 0; }
-
-.second ul::after {
-  /* clear <li> floated left */
-  content: "";
-  display: block;
-  clear: both; }
-
-.second h1 span:first-of-type {
-  /* accessing '+' in <h1> */
-  font-family: Impact, sans-serif;
-  vertical-align: middle;
-  font-size: 4rem; }
-
-.second h1 span:last-of-type {
-  font-style: italic; }
-
-.second ul li {
-  float: left;
-  width: 50%;
-  padding: 0 1rem 0 0; }
-
-.second ul li img {
-  width: 100%;
-  height: auto; }
-
-.second .names {
-  display: block;
-  text-align: center;
-  margin: 0.5rem 0 1rem 0; }
-
-.second p {
-  padding: 0 1rem 0 0;
-  line-height: 1.5rem; }
-
-.second p:last-child {
-  padding: 0; }
+  .second ul:after {
+    /* clear <li> floated left */
+    content: "";
+    display: block;
+    clear: both; }
+  .second ul li {
+    float: left;
+    width: 50%;
+    padding: 0 1rem 0 0; }
+    .second ul li img {
+      width: 100%;
+      height: auto; }
+  .second h1 span:first-of-type {
+    /* accessing '+' in <h1> */
+    font-family: Impact, sans-serif;
+    vertical-align: middle;
+    font-size: 4rem; }
+  .second h1 span:last-of-type {
+    font-style: italic; }
+  .second p {
+    padding: 0 1rem 0 0;
+    line-height: 1.5rem; }
+    .second p:last-child {
+      padding: 0; }
+  .second .names {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0 1rem 0; }
 
 /* -- FIFTH DIV -- */
 .bg-black {
   background-color: #212121;
   color: white;
   padding: 2rem 0 3rem 0; }
-
-.bg-black h1 {
-  text-transform: uppercase; }
-
-.bg-black h1 span:first-of-type {
-  /* accessing '+' in <h1> */
-  font-family: Impact, sans-serif;
-  vertical-align: middle;
-  font-size: 4rem; }
-
-.bg-black h1 span:last-of-type {
-  font-style: italic;
-  text-transform: lowercase; }
-
-.bg-black .container {
-  padding: 0;
-  margin: 0 0 1rem 0; }
-
-.bg-black .container img {
-  width: 100%;
-  height: auto; }
-
-.bg-black .container ul {
-  margin: 0 0 1.2rem 0; }
-
-.bg-black .container ul li {
-  margin: 0 0 0.8rem 0; }
+  .bg-black h1 {
+    text-transform: uppercase; }
+    .bg-black h1 span:last-of-type {
+      font-style: italic;
+      text-transform: lowercase; }
+  .bg-black .container {
+    padding: 0;
+    margin: 0 0 1rem 0; }
+    .bg-black .container img {
+      width: 100%;
+      height: auto; }
+      .bg-black .container img ul {
+        margin: 0 0 1.2rem 0; }
+        .bg-black .container img ul li {
+          margin: 0 0 0.8rem 0; }
 
 .form-box {
   padding: 0.5rem 0; }
-
-.form-box input {
-  border: none;
-  width: 100%;
-  height: 2rem;
-  padding: 1.5rem; }
-
-.form-box input[type="submit"] {
-  border: none;
-  background-color: gold;
-  color: black;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 1.3rem 2.3rem 2.3rem 2.3rem; }
-
-.form-box textarea {
-  width: 100%;
-  padding: 1.5rem;
-  border: none; }
+  .form-box input {
+    border: none;
+    width: 100%;
+    height: 2rem;
+    padding: 1.5rem; }
+    .form-box input[type="submit"] {
+      border: none;
+      background-color: gold;
+      color: black;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 1.3rem 2.3rem 2.3rem 2.3rem; }
+  .form-box textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border: none; }
 
 /* -- SIXTH DIV -- */
 .third p {
   text-align: center;
   line-height: 1.6rem; }
 
+/* -- QUERIES -- */
 /* -- MEDIA QUERIES -- */
-@media all and (min-width: 40rem) {
+@media all and (min-width: 35rem) {
   h1 {
     line-height: 3.5rem;
     font-size: 2rem; }
@@ -236,26 +200,26 @@ a:hover {
   .first ul {
     margin: 0 0 1rem 0;
     border: none; }
-  .first ul li {
-    display: inline; }
-  .first ul li a {
-    display: inline;
-    font-size: 1.2rem;
-    padding: 0 1rem;
-    border: none;
-    background-color: white;
-    border-right: 1px solid #ccccdd; }
-  .first ul li:first-of-type a {
-    /* access the first <li> */
-    color: gold;
-    padding: 0 1rem 0 0; }
-  .first ul li:nth-of-type(6) a {
-    border-right: none; }
-  .first ul li a:hover {
-    background-color: white;
-    border-bottom: none;
-    color: darkgoldenrod;
-    text-shadow: none; }
+    .first ul li {
+      display: inline; }
+      .first ul li a {
+        display: inline;
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        border: none;
+        background-color: white;
+        border-right: 1px solid #ccccdd; }
+        .first ul li a:hover {
+          background-color: white;
+          border-bottom: none;
+          color: darkgoldenrod;
+          text-shadow: none; }
+      .first ul li:first-of-type a {
+        /* access the first <li> */
+        color: gold;
+        padding: 0 1rem 0 0; }
+      .first ul li:nth-of-type(6) a {
+        border-right: none; }
   .first h1 {
     margin: 1.5rem 2rem 1.5rem 0; }
   /* -- SECOND DIV -- */
@@ -268,48 +232,48 @@ a:hover {
     border: 1px solid white;
     background-color: black;
     transition: background-color 0.5s ease, border 0.5s ease; }
-  .bg-people a:hover {
-    background-color: #4169E1;
-    border: 1px solid #4169E1; }
+    .bg-people a:hover {
+      background-color: #4169E1;
+      border: 1px solid #4169E1; }
   /* -- THIRD DIV -- */
   .bg-gold {
     padding: 0; }
-  .bg-gold ul::after {
-    /* clear <li> floated left */
-    content: "";
-    display: block;
-    clear: both; }
-  .bg-gold ul li {
-    width: 25%;
-    float: left;
-    text-align: center;
-    border: none; }
-  .bg-gold li a {
-    background-color: transparent;
-    text-decoration: none;
-    border: none; }
-  .bg-gold li a span:first-child {
-    border: 4px solid white; }
-  .bg-gold li a:hover span:first-child {
-    /* when <a> that belongs to .bg-gold is hovered ... */
-    border: 4px solid #666666; }
-  .bg-gold li a:hover span:last-child {
-    /* when <a> that belongs to .bg-gold is hovered, color the text of second <span> that belongs to <a> to darkgoldenrod */
-    color: #666666; }
-  .bg-gold li span {
-    display: block; }
-  .bg-gold li span:first-child {
-    /* this span holds the svg image - set to white bg and round shape */
-    padding: 1.5rem 0 0 0;
-    margin: 2rem auto 1rem auto;
-    width: 5.5rem;
-    height: 5.5rem;
-    border-radius: 45px;
-    background-color: white; }
-  .bg-gold li span:last-child {
-    margin: 0 auto 2rem auto; }
+    .bg-gold ul:after {
+      /* clear <li> floated left */
+      content: "";
+      display: block;
+      clear: both; }
+      .bg-gold ul:after li {
+        width: 25%;
+        float: left;
+        text-align: center;
+        border: none; }
+        .bg-gold ul:after li a {
+          background-color: transparent;
+          text-decoration: none;
+          border: none; }
+          .bg-gold ul:after li a:hover span:first-child {
+            /* when <a> that belongs to .bg-gold is hovered ... */
+            border: 4px solid #666666; }
+          .bg-gold ul:after li a:hover span:last-child {
+            /* when <a> that belongs to .bg-gold is hovered, color the text of second <span> that belongs to <a> to darkgoldenrod */
+            color: #666666; }
+          .bg-gold ul:after li a span:first-child {
+            border: 4px solid white; }
+        .bg-gold ul:after li span {
+          display: block; }
+          .bg-gold ul:after li span:first-child {
+            /* this span holds the svg image - set to white bg and round shape */
+            padding: 1.5rem 0 0 0;
+            margin: 2rem auto 1rem auto;
+            width: 5.5rem;
+            height: 5.5rem;
+            border-radius: 45px;
+            background-color: white; }
+          .bg-gold ul:after li span:last-child {
+            margin: 0 auto 2rem auto; }
   /* -- FOURTH DIV -- */
-  .second::after {
+  .second:after {
     /* clear <p> floated left */
     content: "";
     display: block;
@@ -326,9 +290,9 @@ a:hover {
     width: 50%;
     float: left;
     padding: 0 2rem 0 0; }
-  .bg-black .container img {
-    width: 80%; }
-  .box::after {
+    .bg-black .container img {
+      width: 80%; }
+  .box:after {
     /* clear <div class="container"> floated left */
     content: "";
     display: block;

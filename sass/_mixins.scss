@@ -1,0 +1,8 @@
+//set the responsive breakpoint
+@mixin tablet {
+  @media all and (min-width: 35rem) {
+    @content;
+
+    // this is a keyword used as a placeholder for CSS rules thqt will be used later on in the code - adjusted for tablet viewport
+  }
+}
